@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "sweep_patterns": ["//:check"],
+  "full_run_triggers": ["ci-paths.json", ".gitmodules"],
+  "no_impact": ["**"],
+  "test_edges": [{ "match": "**", "tests": ["//:check"] }]
+}

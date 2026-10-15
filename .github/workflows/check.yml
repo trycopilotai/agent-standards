@@ -1,0 +1,20 @@
+name: Check
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch the exact workflow commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh api "repos/$GITHUB_REPOSITORY/tarball/$GITHUB_SHA" > "$RUNNER_TEMP/source.tar.gz"
+          tar -xzf "$RUNNER_TEMP/source.tar.gz" --strip-components=1
+      - name: Fetch the pinned formatter
+        run: |
+          git clone --depth 1 --branch v0.1.8 https://github.com/trycopilotai/lint.git vendor/lint
+          test "$(git -C vendor/lint rev-parse HEAD)" = "3c4322bf89aedcd1c5ce5b8cc37c24be63dd09c1"
+      - run: pip install black==24.10.0
+      - run: make ci

@@ -1,0 +1,291 @@
+{
+  "version": 1,
+  "standards": [
+    {
+      "id": "agent-cli",
+      "path": "agent-cli.md",
+      "title": "Agent CLI Invocation",
+      "description": "Invoking a coding agent, resuming a session, or running a headless review.",
+      "applies_when": [
+        "Invoking a coding agent, resuming a session, or running a headless review."
+      ],
+      "triggers": [
+        "resume",
+        "session id",
+        "agent cli",
+        "headless"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "checkout-guard",
+      "path": "checkout-guard.md",
+      "title": "Checkout Guard",
+      "description": "Switching branches in a checkout consumed by other tools.",
+      "applies_when": [
+        "Switching branches in a checkout consumed by other tools."
+      ],
+      "triggers": [
+        "canonical checkout",
+        "branch switch",
+        "checkout guard"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "code-review",
+      "path": "code-review.md",
+      "title": "Code Review Comments",
+      "description": "Addressing review feedback or resolving review threads.",
+      "applies_when": [
+        "Addressing review feedback or resolving review threads."
+      ],
+      "triggers": [
+        "review thread",
+        "review comment",
+        "review feedback",
+        "resolve thread"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "cross-machine-ssh",
+      "path": "cross-machine-ssh.md",
+      "title": "Cross-Machine SSH",
+      "description": "Connecting to an owned machine or transferring files remotely.",
+      "applies_when": [
+        "Connecting to an owned machine or transferring files remotely."
+      ],
+      "triggers": [
+        "ssh",
+        "tailscale",
+        "cross-machine",
+        "remote machine"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "disk-cleanup",
+      "path": "disk-cleanup.md",
+      "title": "Disk Cleanup",
+      "description": "Investigating disk usage or reclaiming caches and worktrees.",
+      "applies_when": [
+        "Investigating disk usage or reclaiming caches and worktrees."
+      ],
+      "triggers": [
+        "disk cleanup",
+        "disk space",
+        "disk full",
+        "reclaim",
+        "cache cleanup"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "doc-filenames",
+      "path": "doc-filenames.md",
+      "title": "Document Filenames",
+      "description": "Creating or renaming an authored reference document.",
+      "applies_when": [
+        "Creating or renaming an authored reference document."
+      ],
+      "triggers": [
+        "document filename",
+        "file naming",
+        "rename document"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "github-auth",
+      "path": "github-auth.md",
+      "title": "GitHub Authentication",
+      "description": "Calling the GitHub API or authenticating a Git operation.",
+      "applies_when": [
+        "Calling the GitHub API or authenticating a Git operation."
+      ],
+      "triggers": [
+        "github auth",
+        "github token",
+        "401",
+        "403",
+        "credential"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "linked-stores",
+      "path": "linked-stores.md",
+      "title": "Linked Stores",
+      "description": "Choosing a home for retained state or editing a path alias.",
+      "applies_when": [
+        "Choosing a home for retained state or editing a path alias."
+      ],
+      "triggers": [
+        "linked store",
+        "root symlink",
+        "retained artifact"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "local-toolchains",
+      "path": "local-toolchains.md",
+      "title": "Local Toolchains",
+      "description": "Repairing a build toolchain or opening a desktop application.",
+      "applies_when": [
+        "Repairing a build toolchain or opening a desktop application."
+      ],
+      "triggers": [
+        "toolchain",
+        "docker",
+        "desktop app",
+        "open file"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "model-selection",
+      "path": "model-selection.md",
+      "title": "Model Selection",
+      "description": "Selecting a provider or assigning an independent review.",
+      "applies_when": [
+        "Selecting a provider or assigning an independent review."
+      ],
+      "triggers": [
+        "model selection",
+        "which model",
+        "provider",
+        "independent review"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "planning-state",
+      "path": "planning-state.md",
+      "title": "Planning and State",
+      "description": "Saving a plan, updating task state, or preparing a handoff.",
+      "applies_when": [
+        "Saving a plan, updating task state, or preparing a handoff."
+      ],
+      "triggers": [
+        "implementation plan",
+        "handoff",
+        "todo",
+        "plan file",
+        "outbox"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pr-merge",
+      "path": "pr-merge.md",
+      "title": "Pull Request Merges",
+      "description": "Merging a pull request or updating its base.",
+      "applies_when": [
+        "Merging a pull request or updating its base."
+      ],
+      "triggers": [
+        "merge pull request",
+        "rebase",
+        "merge method",
+        "land the pr"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "pr-review-handoff",
+      "path": "pr-review-handoff.md",
+      "title": "Pull Request Review Handoff",
+      "description": "Handing a review-ready pull request to the operator.",
+      "applies_when": [
+        "Handing a review-ready pull request to the operator."
+      ],
+      "triggers": [
+        "ready for review",
+        "review handoff",
+        "open the pr"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "provenance",
+      "path": "provenance.md",
+      "title": "Provenance",
+      "description": "Recording derivation, attribution, or publication evidence.",
+      "applies_when": [
+        "Recording derivation, attribution, or publication evidence."
+      ],
+      "triggers": [
+        "provenance",
+        "derivation",
+        "publication evidence"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "submodules",
+      "path": "submodules.md",
+      "title": "Submodules",
+      "description": "Editing a dependency, updating a gitlink, or creating a symlink.",
+      "applies_when": [
+        "Editing a dependency, updating a gitlink, or creating a symlink."
+      ],
+      "triggers": [
+        "submodule",
+        "gitlink",
+        "relative symlink",
+        "vendored"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "turn-discipline",
+      "path": "turn-discipline.md",
+      "title": "Turn Discipline",
+      "description": "Executing an authorized multi-step task or deciding whether to stop.",
+      "applies_when": [
+        "Executing an authorized multi-step task or deciding whether to stop."
+      ],
+      "triggers": [
+        "autonomously",
+        "keep working",
+        "progress report",
+        "multi-step"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "worktree-lifecycle",
+      "path": "worktree-lifecycle.md",
+      "title": "Worktree Lifecycle",
+      "description": "Creating, finishing, or retiring an agent worktree.",
+      "applies_when": [
+        "Creating, finishing, or retiring an agent worktree."
+      ],
+      "triggers": [
+        "worktree",
+        "git worktree",
+        "worktree removal"
+      ],
+      "status": "active"
+    },
+    {
+      "id": "wsl-offload",
+      "path": "wsl-offload.md",
+      "title": "WSL Offload",
+      "description": "Running durable remote jobs or transporting code to WSL.",
+      "applies_when": [
+        "Running durable remote jobs or transporting code to WSL."
+      ],
+      "triggers": [
+        "wsl",
+        "offload",
+        "durable remote",
+        "remote build",
+        "tmux"
+      ],
+      "status": "active"
+    }
+  ]
+}

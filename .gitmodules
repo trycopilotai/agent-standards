@@ -1,0 +1,3 @@
+[submodule "vendor/lint"]
+	path = vendor/lint
+	url = https://github.com/trycopilotai/lint.git
