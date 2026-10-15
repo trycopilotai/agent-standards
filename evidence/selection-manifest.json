@@ -1,0 +1,18 @@
+{
+  "input_commit": "56e1bf3b23c8bc0e2e45e9d6286d62dc061a478b",
+  "script_sha256": "7ad0cda23ee5608011000a7d100bd33bb0f8b17a45d23f4b75426f91bc0132b0",
+  "agent": "Codex",
+  "agent_version": "desktop session; exact model build not exposed",
+  "runtime": "Python 3.9.6",
+  "invocation": [
+    "python3",
+    "-B",
+    "scripts/select_standards.py",
+    "resolve a review thread"
+  ],
+  "date": "2026-10-15T19:01:45.428212+00:00",
+  "output_sha256": "2eda13a5c8b87f73231677441a3f0569a9853cb75fcfc43ed1b8064192fdafbe",
+  "edited": false,
+  "transforms": [],
+  "input_kind": "synthetic prompt"
+}
