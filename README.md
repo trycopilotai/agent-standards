@@ -3,6 +3,10 @@
 Task-scoped operating standards for coding agents, indexed
 by the situations they govern.
 
+[![auto-lint-pr](https://github.com/trycopilotai/agent-standards/actions/workflows/auto-lint-pr.yml/badge.svg)](https://github.com/trycopilotai/agent-standards/actions/workflows/auto-lint-pr.yml)
+[![Check](https://github.com/trycopilotai/agent-standards/actions/workflows/check.yml/badge.svg)](https://github.com/trycopilotai/agent-standards/actions/workflows/check.yml)
+[![lint](https://github.com/trycopilotai/agent-standards/actions/workflows/lint.yml/badge.svg)](https://github.com/trycopilotai/agent-standards/actions/workflows/lint.yml)
+
 Read a small bootstrap instruction, find the relevant
 policy, and load the standards needed for the task. The
 collection covers reviews, Git worktrees, provenance,

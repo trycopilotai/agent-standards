@@ -112,6 +112,16 @@ def main():
         "PASS: index coverage, local links, 9 selector cases, CLI JSON, version, evidence hashes, and asset headers/loop"
     )
 
+    import unittest
+
+    suite = unittest.defaultTestLoader.discover(
+        str(ROOT / "tests"), pattern="test_readme_badges.py"
+    )
+    check(
+        unittest.TextTestRunner().run(suite).wasSuccessful(),
+        "README badge test failed",
+    )
+
 
 if __name__ == "__main__":
     main()
